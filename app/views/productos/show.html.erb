@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @producto.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @producto.descripcion %>
+</p>
+
+<p>
+  <strong>Precio venta:</strong>
+  <%= @producto.precio_venta %>
+</p>
+
+<p>
+  <strong>Precio compra:</strong>
+  <%= @producto.precio_compra %>
+</p>
+
+<p>
+  <strong>Existencia:</strong>
+  <%= @producto.existencia %>
+</p>
+
+<p>
+  <strong>Proveedor:</strong>
+  <%= @producto.proveedor %>
+</p>
+
+<%= link_to 'Edit', edit_producto_path(@producto), class:'button radius default'  %> |
+<%= link_to 'Back', productos_path , class:'button radius secondary'%>
